@@ -9,11 +9,22 @@ window.onload = function () {
 		// document.querySelector(".pokemon-img").insertAdjacentHTML('beforeend', "<img class='pokemon-img-i' src='https://raw.githubusercontent.com/vishal-pandey/pokemon/master/pokemon-images-and-types/images/"+names[id]+".png' />")
 		document.querySelector(".pokemon-img").insertAdjacentHTML('beforeend', "\
 				<div class='img-container'>\
-					<img class='pokemon-img-i' src='./assets/images/" + names[id] + ".png' />\
+					<img class='pokemon-img-i' src='https://raw.githubusercontent.com/vishal-pandey/pokemon/master/pokemon-images-and-types/images/" + names[id] + ".png' />\
 					<span>" + names[id] + "</span>\
+					<div class='description'>\
+						<div>\
+							<span><b>Type : </b>" + data["Type1"][id] + "</span>\
+							<span><b>HP : </b>" + data["HP"][id] + "</span>\
+							<span><b>Attack : </b>" + data["Attack"][id] + "</span>\
+							<span><b>Defense : </b>" + data["Defense"][id] + "</span>\
+							<span><b>Speed : </b>" + data["Speed"][id] + "</span>\
+							<span><b>Color : </b>" + data["Color"][id] + "</span>\
+							<span><b>Weight : </b>" + data["Weight_kg"][id] + "</span>\
+						</div>\
+					</div>\
 				</div>\
 			");
-		if (i == 10) {
+		if (i == 100) {
 			break;
 		}
 		i += 1;
