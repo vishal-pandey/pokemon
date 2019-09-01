@@ -76,7 +76,7 @@ img{
 .img-container:hover .description{
 	min-width: 100px;
 	height: 150px;
-	overflow: scroll;
+	overflow: auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
