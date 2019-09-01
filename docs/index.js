@@ -8,7 +8,7 @@ window.onload = ()=>{
 		.insertAdjacentHTML('beforeend', 
 			"\
 				<div class='img-container'>\
-					<img class='pokemon-img-i' src='./assets/images/"+names[id]+".png' />\
+					<img class='pokemon-img-i' src='https://raw.githubusercontent.com/vishal-pandey/pokemon/master/pokemon-images-and-types/images/"+names[id]+".png' />\
 					<span>"+names[id]+"</span>\
 				</div>\
 			"
